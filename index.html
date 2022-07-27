@@ -2,25 +2,382 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imã Fashion</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <script src="https://unpkg.com/phosphor-icons"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Imã Fashion</title>
+    <script src="https://unpkg.com/phosphor-icons"></script>
   </head>
   <body>
-    <div>Página de cadastro de usuário</div>
-    <div>Home</div>
-    <div>Página do produto</div>
-    <div>Página do carrinho de compras</div>
-    <div>Página da busca por produtos</div>
-    <div>Página de Checkout</div>
+    <nav id="navigation" class="">
+      <div class="wrapper">
+        <a class="logo" href="#home">
+          <img
+            id="dark-logo"
+            src="./assets/logo-dark.png"
+            alt="logo da Imã Fashion"
+          />
+        </a>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <a onclick="closeMenu()" href="#home">Início</a>
+            </li>
+            <li><a onclick="closeMenu()" href="#products">Produtos</a></li>
+            <li><a onclick="closeMenu()" href="#contact">Contato</a></li>
+            <li><a onclick="closeMenu()" href="#about">Quem somos</a></li>
+            <li><a onclick="closeMenu()" href="#newsletter">NewsLetter</a></li>
+          </ul>
+
+          <a class="button" onclick="closeMenu()" href="#contact">LOGIN</a>
+
+          <ul class="social-links">
+            <li>
+              <a target="_blank" href="https://instagram.com">
+                <i class="ph-instagram-logo" style="font-size: 2.5em"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://facebook.com">
+                <i class="ph-facebook-logo" style="font-size: 2.5em"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          onclick="openMenu()"
+          class="open-menu"
+        >
+          <i class="ph-list" style="font-size: 2.5em"></i>
+        </button>
+
+        <button
+          aria-expanded="true"
+          aria-label="Fechar menu"
+          onclick="closeMenu()"
+          class="close-menu"
+        >
+          <i class="ph-x" style="font-size: 2.5em"></i>
+        </button>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="wrapper">
+        <div>
+          <header>
+            <h2>BOAS-VINDAS A IMÃ FASHION 👋</h2>
+            
+          </header>
+
+          <div class="content">
+            <p>
+              Desejamos que você tenha uma experiência incrível e encantadora na
+              nossa loja Online!
+            </p>
+            <a class="button" href="#contact">
+              <i class="ph-whatsapp-logo" style="font-size: 1.5em"></i>
+              Fale com um dos nosso atendentes!
+            </a>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <h3>Frete</h3>
+            <p>Frete Off para compras acima de R$200</p>
+          </div>
+
+          <div class="stat">
+            <h3>Parcelamento</h3>
+            <p>Parcelamos em até 6x sem juros</p>
+          </div>
+
+          <div class="stat">
+            <h3>Loja Segura</h3>
+            <p>Loja segura para suas compras e dados</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="wrapper">
+        <header>
+          <h2>produtos</h2>
+        </header>
+
+        <div class="content">
+          <div class="cards">
+            <div class="card col-a">
+              <img src="./assets/calca-jeans-personalizada.jpg" alt="" />
+              <h3>Calça Jeans Estilizada</h3>
+              <p class="price">R$ 60,00</p>
+              <p class="installment">6x de R$ 10,00</p>
+            </div>
+
+            <div class="card col-b">
+              <img src="./assets/calca-jeans-personalizada.jpg" alt="" />
+              <h3>Calça Jeans Estilizada</h3>
+              <p class="price">R$ 60,00</p>
+              <p class="installment">6x de R$ 10,00</p>
+            </div>
+
+            <div class="card col-c">
+              <img src="./assets/calca-jeans-personalizada.jpg" alt="" />
+              <h3>Calça Jeans Estilizada</h3>
+              <p class="price">R$ 60,00</p>
+              <p class="installment">6x de R$ 10,00</p>
+            </div>
+
+            <div class="card col-d">
+              <img src="./assets/calca-jeans-personalizada.jpg" alt="" />
+              <h3>Calça Jeans Estilizada</h3>
+              <p class="price">R$ 60,00</p>
+              <p class="installment">6x de R$ 10,00</p>
+            </div>
+
+            <div class="card col-a">
+              <img src="./assets/calca-jeans-personalizada.jpg" alt="" />
+              <h3>Calça Jeans Estilizada</h3>
+              <p class="price">R$ 60,00</p>
+              <p class="installment">6x de R$ 10,00</p>
+            </div>
+
+            <div class="card col-b">
+              <img src="./assets/calca-jeans-personalizada.jpg" alt="" />
+              <h3>Calça Jeans Estilizada</h3>
+              <p class="price">R$ 60,00</p>
+              <p class="installment">6x de R$ 10,00</p>
+            </div>
+
+            <div class="card col-a">
+              <img src="./assets/calca-jeans-personalizada.jpg" alt="" />
+              <h3>Calça Jeans Estilizada</h3>
+              <p class="price">R$ 60,00</p>
+              <p class="installment">6x de R$ 10,00</p>
+            </div>
+
+            <div class="card col-b">
+              <img src="./assets/calca-jeans-personalizada.jpg" alt="" />
+              <h3>Calça Jeans Estilizada</h3>
+              <p class="price">R$ 60,00</p>
+              <p class="installment">6x de R$ 10,00</p>
+            </div>
+
+            <div class="card col-a">
+              <img src="./assets/calca-jeans-personalizada.jpg" alt="" />
+              <h3>Calça Jeans Estilizada</h3>
+              <p class="price">R$ 60,00</p>
+              <p class="installment">6x de R$ 10,00</p>
+            </div>
+
+            <div class="card col-b">
+              <img src="./assets/calca-jeans-personalizada.jpg" alt="" />
+              <h3>Calça Jeans Estilizada</h3>
+              <p class="price">R$ 60,00</p>
+              <p class="installment">6x de R$ 10,00</p>
+            </div>
+
+            <div class="card col-a">
+              <img src="./assets/calca-jeans-personalizada.jpg" alt="" />
+              <h3>Calça Jeans Estilizada</h3>
+              <p class="price">R$ 60,00</p>
+              <p class="installment">6x de R$ 10,00</p>
+            </div>
+
+            <div class="card col-b">
+              <img src="./assets/calca-jeans-personalizada.jpg" alt="" />
+              <h3>Calça Jeans Estilizada</h3>
+              <p class="price">R$ 60,00</p>
+              <p class="installment">6x de R$ 10,00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrapper">
+        <div>
+          <header>
+            <h2>Quem somos</h2>
+          </header>
+
+          <div class="content">
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim. Amet minim mollit
+              non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+              officia consequat duis enim. Amet minim mollit non deserunt
+              ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+              duis enim. Amet minim mollit non deserunt ullamco est sit aliqua
+              dolor do amet sint. Velit officia consequat duis enim. Amet minim
+              mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            </p>
+          </div>
+        </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="wrapper">
+        <div>
+          <header>
+            <h2>NewsLetter</h2>
+          </header>
+
+          <div class="content">
+            
+            <h3>Quer receber nossas ofertas? Cadastre-se e comece a recebê-las!</h3>
+
+            <a
+              class="button"
+              href="https://wa.me/5511987654321"
+              target="_blank"
+            >
+            <i class="ph-whatsapp-logo"></i>
+
+              Coloque seu E-mail aqui!
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <section id="contact">
+      <div class="wrapper">
+        <div>
+          <header>
+            <h2>Entre em contato com a gente!</h2>
+          </header>
+
+          <div class="content">
+            <ul>
+              <li>
+        
+                <i class="ph-map-pin" style="font-size: 1.5em"></i>
+                R. 136, Goiânia
+              </li>
+              <li>
+                
+                <i class="ph-envelope" style="font-size: 1.5em"></i>
+                contato@imafashion.com
+              </li>
+            </ul>
+
+            <a
+              class="button"
+              href="https://wa.me/5511987654321"
+              target="_blank"
+            >
+            <i class="ph-whatsapp-logo"></i>
+
+            Fale com um de nossos representantes
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrapper">
+        <div class="col-a">
+          <a href="#home">
+            <img id="dark-logo" src="./assets/logo-dark.png" alt="">
+          </a>
+
+          <p>
+            ©2022 Imã Fashion. <br />
+            Todos os direitos reservados.
+          </p>
+        </div>
+
+        <div class="col-b">
+          <ul class="social-links">
+            <li>
+              <a target="_blank" href="https://instagram.com"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.5 6.49997H17.51"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://facebook.com">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <a id="backToTopButton"  href="#home">
+      <i class="ph-arrow-circle-up" style="font-size: 3em"></i>
+    </a>
+
+    <!-- ScrollReaveal Lib -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./main.js"></script>
   </body>
 </html>
