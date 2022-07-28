@@ -25,7 +25,7 @@
             alt="logo da Imã Fashion"
           />
         </a>
-
+        
         <div class="menu">
           <ul>
             <li>
@@ -37,6 +37,8 @@
             <li><a onclick="closeMenu()" href="#newsletter">NewsLetter</a></li>
           </ul>
 
+
+          
           <a class="button" onclick="closeMenu()" href="#contact">LOGIN</a>
 
           <ul class="social-links">
@@ -53,23 +55,35 @@
           </ul>
         </div>
 
-        <button
-          aria-expanded="false"
-          aria-label="Abrir menu"
-          onclick="openMenu()"
-          class="open-menu"
-        >
-          <i class="ph-list" style="font-size: 2.5em"></i>
-        </button>
+        <div class="links">
+          <button class="open-new-page" href="#">
+            <i class="ph-shopping-cart" ></i> 
+          </button>
+           
+          <button class="open-new-page" href="#">
+            <i class="ph-magnifying-glass" ></i> 
+          </button>
+  
+          <button
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()"
+            class="open-menu"
+          >
+            <i class="ph-list" style="font-size: 2.5em"></i>
+          </button>
+  
+          <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()"
+            class="close-menu"
+          >
+            <i class="ph-x" style="font-size: 2.5em"></i>
+          </button>
+        </div>
 
-        <button
-          aria-expanded="true"
-          aria-label="Fechar menu"
-          onclick="closeMenu()"
-          class="close-menu"
-        >
-          <i class="ph-x" style="font-size: 2.5em"></i>
-        </button>
+
       </div>
     </nav>
 
