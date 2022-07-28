@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans";
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --pink-700: #7f004a;
+  --pink-100: #fef8fb;
+  --black: black;
+  --white: white;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: #7f004a;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#navbar {
+display: flex;
+align-items:center;
+justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+  /* não conseguir fazer os links do header mudar de cor */
+#nav li a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bolder;
+  color: white;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: black;
+}
+
+#navbar li a.active::after 
+#navbar li a.hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: #eb9ac9;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+
+/* banner */
+#banner {
+  background-image: url("imagens/conjunto-azul.jpg");
+  height: 60vh;
+  width: 100%;
+  background-size: cover ;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#banner h4 {
+  padding-bottom: 15px;
+}
+
+#banner h1 {
+  color:#7f004a;
+}
+
+#banner button {
+  background-image: url();
+}
+
+
+/* body {
+  height: 100vh;
+  width: 100%;
+  background: var(--pink-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+ */
+
