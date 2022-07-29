@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+
+        <title>Imã Fashion</title>
+    </head>
+
+    <body>
+        <nav>
+            <a href="#">
+                <img src="./images/logo-dark.png" class="logo" />
+            </a>   
+        </nav>
+
+        <section class="section-p1" id="cart">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Remover</td>
+                        <td>Imagem</td>
+                        <td>Produto</td>
+                        <td>Preço</td>
+                        <td>Quantidade</td>
+                        <td>Subtotal</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="/fashion/images/blusa-decote-listrada.jpg" alt=""></td>
+                        <td>Blusa Decote Listrada</td>
+                        <td>R$ 219,90</td>
+                        <td><input type="number" value="1"></td>
+                        <td>R$ 219,90</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="/fashion/images/blusa-decote-listrada.jpg" alt=""></td>
+                        <td>Blusa Decote Listrada</td>
+                        <td>R$ 219,90</td>
+                        <td><input type="number" value="1"></td>
+                        <td>R$ 219,90</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="/fashion/images/blusa-decote-listrada.jpg" alt=""></td>
+                        <td>Blusa Decote Listrada</td>
+                        <td>R$ 219,90</td>
+                        <td><input type="number" value="1"></td>
+                        <td>R$ 219,90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="test">
+            <section class="section-p2">
+                <div id="dadosnf">
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">Email 
+                            <input type="email" class="form-control" id="email" />
+                        </label>							
+                    </div>
+
+                    <div>
+                        <h3>Endereço de entrega</h3>
+
+                        <div class="form-group">
+                            <label>
+                                <p>
+                                    <for="CEP" class="col-sm-2 control-label">CEP 
+                                        <input type="text" class="form-control" id="CEP" />
+                                </p>
+                                        
+                                <p for="endereço" class="col-sm-2 control-p">
+                                    Endereço 
+                                    <input type="text" class="form-control" id="endereço" />
+                                </p>
+                                        
+                                <p for="numero" class="col-sm-2 control-p">
+                                    Número 
+                                    <input type="text" class="form-control" id="numero" />
+                                </p>
+                                
+                                <p for="complemento" class="col-sm-2 control-p">
+                                    Complemento 
+                                    <input type="text" class="form-control" id="complemento" />
+                                </p>	
+                                
+                                <p for="referencia" class="col-sm-2 control-p">
+                                    Referência 
+                                    <input type="text" class="form-control" id="referencia" />
+                                </p>
+                                
+                                <p for="bairro" class="col-sm-2 control-p">
+                                    Bairro 
+                                    <input type="text" class="form-control" id="bairro" />
+                                </p>
+                                
+                                <p for="cidade" class="col-sm-2 control-p">
+                                    Cidade 
+                                    <input type="text" class="form-control" id="cidade" />
+                                </p>
+                                
+                                <div>
+                                    <p for="estado" class="col-sm-2 control-p">UF</p>
+                                    <div class="option">
+                                        <select class="option" name="estado" id="estado">
+                                            <option value="AC">AC</option>
+                                            <option value="AL">AL</option>
+                                            <option value="AM">AM</option>
+                                            <option value="AP">AP</option>
+                                            <option value="BA">BA</option>
+                                            <option value="CE">CE</option>
+                                            <option value="DF">DF</option>
+                                            <option value="ES">ES</option>
+                                            <option value="GO">GO</option>
+                                            <option value="MA">MA</option>
+                                            <option value="MG">MG</option>
+                                            <option value="MS">MS</option>
+                                            <option value="MT">MT</option>
+                                            <option value="PA">PA</option>
+                                            <option value="PE">PE</option>
+                                            <option value="PI">PI</option>
+                                            <option value="PR">PR</option>
+                                            <option value="RJ">RJ</option>
+                                            <option value="RN">RN</option>
+                                            <option value="RO">RO</option>
+                                            <option value="RR">RR</option>
+                                            <option value="RS">RS</option>
+                                            <option value="SC">SC</option>
+                                            <option value="SE">SE</option>
+                                            <option value="SP">SP</option>
+                                            <option value="TO">TO</option>
+                                        </select>
+                                    </div>
+                                </div>          
+                            </label>	
+
+                        </div>
+                                
+                        <div id="cartao">
+                                    <h3>Pagamento:</h3>
+                                    <container>
+                                            <tr>
+                                                <td><input type ="checkbox">BOLETO</input></td>        
+                                                <td><input type ="checkbox">CARTAO DE CRÉDITO</input></td>                
+                                                <td><input type ="checkbox">DEPÓSITO BANCÁRIO</input></td>
+                                            </tr>
+                                    </container>
+                                
+                        </div> 
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="section-p2"> 
+                <div id="envio">
+                        
+                    <container>
+                            
+                        <h3>Forma de Envio</h3>
+                                
+                        <span>
+                                    
+                            <p><input type ="checkbox">Retirada no local</input></p>
+                                    
+                            <p>R$ 0,00</p>
+                                
+                        </span>
+                        
+                        <span>
+                            <p><input type ="checkbox">Motoboy</input></p>
+                            <p>R$ 19,90</p>
+                        </span>
+                        
+                        <span>
+                            <p><input type ="checkbox">PAC</input></p>
+                            <p>R$ 31,90</p>
+                        </span>
+                                
+                        <span>
+                            <p><input type ="checkbox">Frete grátis</input></p>
+                            <p>R$ 0,00</p>
+                        </span>
+                                
+                        <span>
+                            <p><input type ="checkbox">Package</input></p>
+                            <p>R$ 22,90</p>
+                        </span>
+
+                        <div id="observacao">
+                            <h4>Observações</h4>
+                            <input type ="text"></input>
+                        </div>
+
+                    </container>                  
+                </div>
+            </section>
+        
+            <section id="pagamento" class="section-p2">          
+                <div>
+                    <h3>Total Carrinho</h3>
+                    <table>
+                            <tr>
+                                <td>Total Carrinho</td>
+                                <td>R$ 659,70</td>
+                            </tr>
+                            <tr>
+                                <td>Frete</td>
+                                <td>Gratís</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>R$ 659,70</td>
+                            </tr>
+                    </table>
+                    <button type="submit" class="botao2"> Pagar </button>
+                </div>
+            </section>
+        </div>
+
+    </body>
+</html>

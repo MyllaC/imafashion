@@ -281,9 +281,7 @@ body.menu-expanded button {
 /* ===== CAR ===== */
 
 .sc-menu {
-  position: absolute;
-  opacity: 1;
-  visibility: visible;
+  display: none;
 }
 
 body.sp-expanded .sc-menu {
@@ -328,6 +326,10 @@ body.sp-expanded .sc-menu {
 
   transition: transform 300ms;
   transform: translateY(0%);
+}
+
+body.sp-expanded .title {
+  font-size: 10px;
 }
 
 body.sp-expanded img {
@@ -472,9 +474,7 @@ body.sp-expanded .finalizar:hover {
 /* ===== SEARCH PAGE ===== */
 
 .search-page {
-  position: absolute;
-  opacity: 0;
-  visibility: hidden;
+  display: none;
 }
 
 body.search-expanded .search-page {
@@ -704,7 +704,9 @@ body.search-expanded .search-page .product .credit-card i {
 
   width: 17rem;
   height: 30rem;
+  border: none;
   border-radius: 0.6rem;
+  cursor: pointer;
 }
 
 #products .card img {
