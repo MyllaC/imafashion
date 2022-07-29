@@ -176,6 +176,11 @@ nav .links {
   gap: 1.5rem;
 }
 
+nav .open-new-page {
+  font-size: 3rem;
+  padding-top: 0.4rem;
+}
+
 /* ===== MENU-EXPANDED ===== */
 body.menu-expanded {
   overflow: hidden; /*para n ter como dar o scroll */
@@ -205,7 +210,10 @@ body.menu-expanded .close-menu {
 body.menu-expanded .links {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid red;
+}
+
+body.menu-expanded .links .open-new-page {
+  visibility: hidden;
 }
 
 body.menu-expanded .menu {
@@ -268,6 +276,180 @@ body.menu-expanded .logo,
 body.menu-expanded button {
   position: relative;
   z-index: 100;
+}
+
+/* ===== CAR ===== */
+
+body .sc-menu {
+  display: none;
+}
+
+body.sp-expanded #home,
+body.sp-expanded #products,
+body.sp-expanded #about,
+body.sp-expanded #newsletter,
+body.sp-expanded #contact,
+body.sp-expanded #backToTopButton,
+body.sp-expanded .open-new-page,
+body.sp-expanded .open-menu,
+body.sp-expanded footer {
+  display: none;
+}
+
+body.sp-expanded .close-menu {
+  position: relative;
+  z-index: 100;
+  opacity: 1;
+  visibility: visible;
+  color: var(--white);
+}
+
+body.sp-expanded .sc-menu {
+  display: flex;
+  margin-top: 4rem;
+
+  width: 97%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--pink-100);
+}
+
+body.sp-expanded img {
+  width: 100px;
+  border-radius: 0.6rem;
+}
+
+body.sp-expanded .products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+body.sp-expanded .product {
+  border: 1px solid var(--pink-700);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  width: 90%;
+  border-radius: 0.6rem;
+}
+
+body.sp-expanded .product-photo-box {
+  display: flex;
+  flex-direction: column;
+}
+
+body.sp-expanded .product-photo-box span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.2rem;
+
+  cursor: pointer;
+  color: red;
+
+  font-size: 10px;
+  font-weight: bold;
+  padding-top: 0.2rem;
+}
+
+body.sp-expanded .product-photo-box span i {
+  color: red;
+  font-size: 1.5rem;
+  padding-top: 0.2rem;
+}
+
+body.sp-expanded .descrition {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+
+  gap: 0.5rem;
+  padding-left: 3rem;
+}
+
+body.sp-expanded .descrition .titlePhoto {
+  font-size: 2rem;
+  line-height: 21px;
+}
+
+body.sp-expanded .descrition .price {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--pink-700);
+}
+
+body.sp-expanded .credit-card {
+  display: flex;
+  align-items: center;
+
+  font-weight: bold;
+  gap: 0.5rem;
+}
+
+body.sp-expanded .credit-card i {
+  font-size: 2.5rem;
+  color: var(--pink-700);
+}
+
+body.sp-expanded .size {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+body.sp-expanded .size h3 {
+  background-color: var(--pink-300);
+  padding-inline: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+body.sp-expanded .descrition .amount {
+  display: flex;
+  align-items: center;
+}
+
+body.sp-expanded .descrition .amount,
+span {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+body.sp-expanded .descrition .amount i {
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: var(--pink-700);
+}
+
+body.sp-expanded .finalizar {
+  width: 340px;
+  height: 62px;
+
+  border: none;
+  border-radius: 10px;
+
+  color: white;
+  background: var(--pink-700);
+
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+body.sp-expanded .finalizar:hover {
+  background-color: var(--pink-600);
+  color: white;
 }
 
 /* ===== HOME ===== */
