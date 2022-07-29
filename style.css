@@ -280,8 +280,19 @@ body.menu-expanded button {
 
 /* ===== CAR ===== */
 
-body .sc-menu {
-  display: none;
+.sc-menu {
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+}
+
+body.sp-expanded .sc-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sc-menu {
+  transform: translateY(100%);
 }
 
 body.sp-expanded #home,
@@ -292,6 +303,7 @@ body.sp-expanded #contact,
 body.sp-expanded #backToTopButton,
 body.sp-expanded .open-new-page,
 body.sp-expanded .open-menu,
+body.sp-expanded .search-page,
 body.sp-expanded footer {
   display: none;
 }
@@ -313,6 +325,9 @@ body.sp-expanded .sc-menu {
   display: flex;
   flex-direction: column;
   background: var(--pink-100);
+
+  transition: transform 300ms;
+  transform: translateY(0%);
 }
 
 body.sp-expanded img {
@@ -378,12 +393,12 @@ body.sp-expanded .descrition {
 }
 
 body.sp-expanded .descrition .titlePhoto {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 21px;
 }
 
 body.sp-expanded .descrition .price {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: var(--pink-700);
 }
@@ -391,7 +406,7 @@ body.sp-expanded .descrition .price {
 body.sp-expanded .credit-card {
   display: flex;
   align-items: center;
-
+  font-size: 1.4rem;
   font-weight: bold;
   gap: 0.5rem;
 }
@@ -405,6 +420,7 @@ body.sp-expanded .size {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  font-size: 1.4rem;
 }
 
 body.sp-expanded .size h3 {
@@ -416,6 +432,7 @@ body.sp-expanded .size h3 {
 body.sp-expanded .descrition .amount {
   display: flex;
   align-items: center;
+  font-size: 1.4rem;
 }
 
 body.sp-expanded .descrition .amount,
@@ -450,6 +467,150 @@ body.sp-expanded .finalizar {
 body.sp-expanded .finalizar:hover {
   background-color: var(--pink-600);
   color: white;
+}
+
+/* ===== SEARCH PAGE ===== */
+
+.search-page {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.search-expanded .search-page {
+  opacity: 1;
+  visibility: visible;
+}
+
+.search-page {
+  transform: translateY(100%);
+}
+
+body.search-expanded #home,
+body.search-expanded #products,
+body.search-expanded #about,
+body.search-expanded #newsletter,
+body.search-expanded #contact,
+body.search-expanded #backToTopButton,
+body.search-expanded .open-new-page,
+body.search-expanded .open-menu,
+body.search-expanded .sc-menu,
+body.search-expanded footer {
+  display: none;
+}
+
+body.search-expanded .close-menu {
+  position: relative;
+  z-index: 100;
+  opacity: 1;
+  visibility: visible;
+  color: var(--white);
+}
+
+body.search-expanded .search-page {
+  display: flex;
+  margin-top: 4rem;
+
+  width: 97%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--pink-100);
+
+  transition: transform 300ms;
+  transform: translateY(0%);
+}
+
+body.search-expanded .search-page .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+body.search-expanded .search-page .title {
+  text-align: center;
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+body.search-expanded .search-page .search-box {
+  background: var(--white);
+  height: 40px;
+  width: 340px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 0.5px solid var(--pink-700);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body.search-expanded .search-page .search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: var(--black);
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+}
+
+body.search-expanded .search-page .product {
+  display: flex;
+  flex-direction: row;
+
+  padding: 1rem;
+  gap: 1rem;
+}
+
+body.search-expanded .search-page .description {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex: 1;
+}
+
+body.search-expanded .search-page .product .item {
+  border-radius: 10px;
+  height: 120px;
+}
+
+body.search-expanded .search-page .product .titlePhoto {
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+body.search-expanded .search-page .product .price {
+  font-size: 25px;
+  line-height: 21px;
+  font-weight: bold;
+
+  padding-top: 1.5rem;
+
+  color: var(--pink-700);
+}
+
+body.search-expanded .search-page .product .credit-card {
+  font-size: 12px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+body.search-expanded .search-page .product .credit-card i {
+  color: var(--pink-700);
+  padding-right: 5px;
+  font-size: 2rem;
 }
 
 /* ===== HOME ===== */
