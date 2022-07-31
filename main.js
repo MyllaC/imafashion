@@ -16,7 +16,7 @@ function openSearchPage() {
   document.body.classList.add('search-expanded')
 }
 
-var url = 'http://127.0.0.1:5500/product-page.html'
+var url = 'https://imafashion.netlify.app/product-page.html'
 var btn = document.querySelectorAll('.card')
 
 function openInNewTab(url, id) {
