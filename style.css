@@ -692,6 +692,10 @@ body.search-expanded .search-page .product .credit-card i {
 
 /* ===== PRODUCTS ===== */
 
+#products {
+  overflow: hidden;
+}
+
 #products header h2 {
   margin-top: 6rem;
   margin-bottom: 4rem;
@@ -713,7 +717,7 @@ body.search-expanded .search-page .product .credit-card i {
 
   background: var(--pink-200);
 
-  width: 17rem;
+  width: 16rem;
   height: 30rem;
   border: none;
   border-radius: 0.6rem;
