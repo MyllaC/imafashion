@@ -29,7 +29,7 @@ Projeto prático em grupo para contrução de um e-commerce, desenvolvido no cur
 * Camila Cristina - https://www.linkedin.com/in/camila-alves-381a39173/
 * Carlos Henrique - https://www.linkedin.com/in/carlos-henrique-gomes-amaro-789738a2/
 * Gabriel Sousa - https://www.linkedin.com/in/costagsousa/
-* Jessica Leite -
+* Jessica Leite - https://www.linkedin.com/in/j%C3%A9ssica-leite-andr%C3%A9-87b223175
 * Maikon Douglas -
 * Nadielly Xavier - https://www.linkedin.com/in/nadielly-xavier-de-medeiros-79b61071/
 
