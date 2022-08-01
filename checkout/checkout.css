@@ -96,18 +96,126 @@ main .photo i {
 
 main .infos {
   width: 90%;
-  border: 1px solid black;
+}
+
+main .infos .you form {
+  border: 2px solid var(--pink-700);
+  border-radius: 5px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+main .infos .you form input {
+  background-color: transparent;
+  border: none;
+}
+
+main .infos .you form input:focus {
+  border: none;
+  box-shadow: 0 0 0 0;
+  outline: 0;
 }
 
 main .infos .types {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 'col-a col-b';
+  gap: 0.5rem;
 }
 
 main .infos .type {
   display: flex;
+  border: 1px solid var(--pink-700);
   align-items: center;
-  border: 1px solid red;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px var(--gray-500);
 }
+
+main h2 {
+  font-size: 1.5rem;
+  color: var(--pink-700);
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+main .email {
+  margin: 12px 0;
+}
+
+main .conta-atual {
+  padding: 0.5em;
+  border: 1px solid #eb9ac9;
+  box-shadow: 5px 5px 2px rgb(0 0 0 / 20%);
+  margin-left: 0.5rem;
+  border-radius: 5px;
+}
+
 /* MAIN-RIGHT */
+
+main .resume-box {
+  width: 90%;
+}
+
+main .resume span {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+main .total span {
+  display: flex;
+  flex-direction: column;
+}
+
+main .total span h3 {
+  font-size: 1.5rem;
+}
+
+main .payment {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+main .payment .type {
+  gap: 0.5rem;
+  display: flex;
+}
+
+main .payment .type label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer .end-shopping {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  background-color: var(--pink-700);
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+footer .end-shopping:hover {
+  opacity: 1;
+}
