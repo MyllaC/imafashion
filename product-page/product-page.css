@@ -473,7 +473,15 @@ body.search-expanded .search-page {
   transform: translateY(100%);
 }
 
-body.search-expanded main,
+body.search-expanded #home,
+body.search-expanded #products,
+body.search-expanded #about,
+body.search-expanded #newsletter,
+body.search-expanded #contact,
+body.search-expanded #backToTopButton,
+body.search-expanded .open-new-page,
+body.search-expanded .open-menu,
+body.search-expanded .sc-menu,
 body.search-expanded footer {
   display: none;
 }
