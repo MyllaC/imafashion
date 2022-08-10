@@ -479,7 +479,7 @@ body.search-expanded .close-menu {
 
 body.search-expanded .search-page {
   display: flex;
-  margin-top: 10rem;
+  margin-top: 5rem;
 
   width: 97%;
   height: 100%;
