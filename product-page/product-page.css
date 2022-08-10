@@ -265,9 +265,10 @@ body.sp-expanded .sc-menu {
   transform: translateY(100%);
 }
 
-body.search-expanded main,
-body.search-expanded .search-page,
-body.search-expanded footer {
+body.sp-expanded #content,
+body.sp-expanded .content,
+body.sp-expanded .search-page,
+body.sp-expanded footer {
   display: none;
 }
 
@@ -281,7 +282,7 @@ body.sp-expanded .close-menu {
 
 body.sp-expanded .sc-menu {
   display: flex;
-  margin-top: 10rem;
+  margin-top: 5rem;
 
   width: 97%;
   height: 100%;
