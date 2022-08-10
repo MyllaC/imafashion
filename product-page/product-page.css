@@ -269,7 +269,15 @@ body.sp-expanded .sc-menu {
   transform: translateY(100%);
 }
 
-body.sp-expanded main,
+body.sp-expanded #home,
+body.sp-expanded #products,
+body.sp-expanded #about,
+body.sp-expanded #newsletter,
+body.sp-expanded #contact,
+body.sp-expanded #backToTopButton,
+body.sp-expanded .open-new-page,
+body.sp-expanded .open-menu,
+body.sp-expanded .search-page,
 body.sp-expanded footer {
   display: none;
 }
