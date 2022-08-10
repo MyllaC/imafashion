@@ -10,10 +10,12 @@ function closeMenu() {
 
 function openShoppingCart() {
   document.body.classList.add('sp-expanded')
+  document.body.classList.remove('search-expanded')
 }
 
 function openSearchPage() {
   document.body.classList.add('search-expanded')
+  document.body.classList.remove('sp-expanded')
 }
 
 var url = 'https://imafashion.netlify.app/product-page/product-page.html'
