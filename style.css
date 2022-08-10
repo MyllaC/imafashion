@@ -156,9 +156,6 @@ nav a {
   color: var(--white);
 }
 
-nav.scroll {
-  background: var(--pink-300);
-}
 
 nav button {
   background: none;
