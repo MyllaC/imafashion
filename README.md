@@ -17,6 +17,19 @@ Projeto prático em grupo para contrução de um e-commerce, desenvolvido no cur
 4. Possibilitar que monitores nos ajudem na avaliação dos alunos.
 5. Simular o ambiente das empresas.
 
+## 💻 Organização
+
+ * Notion (informações sobre links importantes): https://www.notion.so/HACKADEV-Im-Fashion-f129dcf8f9014908aceebd90b28c2298
+ 
+![image](https://user-images.githubusercontent.com/92322675/183784675-69d5554b-9274-49f4-a01c-d5cc24e568aa.png)
+
+ * Trello: https://trello.com/b/M1LXZYqH/hackadev
+ 
+![image](https://user-images.githubusercontent.com/92322675/183784760-00504f88-9b96-4448-8a90-a16c3d4b5b4d.png)
+
+ * Layout disponível no Figma: https://www.figma.com/file/nFFeit0ZqGJkSslsp4RFfu/Im%C3%A3Fashion?node-id=0%3A1
+ 
+![image](https://user-images.githubusercontent.com/92322675/183784951-f2f6ed53-8fea-48cd-8dd0-3214c397596b.png)
 
 ## 🚀 Stacks
 
