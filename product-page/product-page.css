@@ -422,21 +422,32 @@ body.sp-expanded .descrition .amount i {
 
 body.sp-expanded .finalizar {
   width: 340px;
-  height: 62px;
+  height: 40px;
 
   border: none;
   border-radius: 10px;
 
   color: white;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
   background: var(--pink-700);
 
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  text-decoration: none;
+
   margin-top: 2rem;
-  margin-bottom: 4rem;
 }
 
 body.sp-expanded .finalizar:hover {
   background-color: var(--pink-600);
   color: white;
+}
+
+body.sp-expanded .more-products {
+  margin-bottom: 4rem;
 }
 
 /* ===== SEARCH PAGE ===== */
